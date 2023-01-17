@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './scss/material';
+@import './scss/utils';
+@import './scss/responsive';
+@import './scss/variables';
+@import './scss/theme';
+
+@import 'ngx-toastr/toastr';
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.mat-h2,
+.mat-title,
+.mat-typography h3 {
+  margin: 0;
+}
+table {
+  width: 100%;
+}
+tr.mat-row, tr.mat-footer-row {
+    height: 3.5rem !important;
+}
+.mat-table-sticky:last-child {
+  justify-content: flex-end;
+  width: 0.725rem;
+}
+.mat-dialog-container {
+  padding: 0px!important;
+}
+.mat-icon {
+  height: initial!important;
+  width: initial!important;
+}

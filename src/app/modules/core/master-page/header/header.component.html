@@ -1,0 +1,29 @@
+<mat-toolbar color="light" class="fix-nav mat-elevation-z3" style="background-color: #fff;">
+    <button type="button" mat-icon-button class="visible-md" (click)="toggleSidebar()">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <div class="nav-brand">
+      <img class="app-logo" src="/assets/img/logo.png" alt="">
+    </div>
+    <span class="nav-spacer"></span>
+    <div class="hidden-sm">
+
+    </div>
+    <mat-menu #profile="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item>
+        <mat-icon>person</mat-icon>
+        <span class="me-5">Profile</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>inbox</mat-icon>
+        <span>Inbox</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+      </button>
+    </mat-menu>
+    <button mat-icon-button>
+      <mat-icon>notifications_none</mat-icon>
+    </button>
+  </mat-toolbar>

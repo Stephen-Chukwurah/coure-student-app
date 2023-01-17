@@ -1,0 +1,22 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .sidenav-container {
+      flex: 1;
+      background: aliceblue;    
+      .sidenav {
+        // padding: 12px;
+        width: 250px;
+        padding: 12px 0px 12px 12px;
+        // background: $white;
+      }
+      .main-container {
+        padding: 16px 40px;
+      }
+    }
+  }

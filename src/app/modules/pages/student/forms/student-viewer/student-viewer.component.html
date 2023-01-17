@@ -1,0 +1,67 @@
+<div class="w-full">
+
+    <form class="rounded mx-10 my-4">
+        <div class="text-black text-xl border-b border-grey-lighter pb-3 mb-8">Student Viewer</div>
+
+        <div class="flex flex-wrap mb-0">
+            <div class="w-full">
+                <label class="text-md text-gray-400 font-bold">Title</label>    
+                <p class="text-md">{{ data?.title }}</p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap mb-0">
+            <div class="w-full">
+                <label class="text-md text-gray-400 font-bold">First Name</label>    
+                <p class="text-md">{{ data?.firstName }}</p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap mb-0">
+            <div class="w-full">
+                <label class="text-md text-gray-400 font-bold">Last Name</label>    
+                <p class="text-md">{{ data?.lastName }}</p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap mb-0">
+            <div class="w-full">
+                <label class="text-md text-gray-400 font-bold">Phone Number</label>    
+                <p class="text-md">{{ data?.phoneNumber }}</p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap mb-0">
+            <div class="w-full">
+                <label class="text-md text-gray-400 font-bold">Date of birth</label>    
+                <p class="text-md">{{ data?.dateOfBirth }}</p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap mb-0">
+            <div class="w-full">
+                <label class="text-md text-gray-400 font-bold">Address</label>    
+                <p class="text-md">{{ data?.address }}</p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap mb-0">
+            <div class="w-full">
+                <label class="text-md text-gray-400 font-bold">Email</label>    
+                <p class="text-md">{{ data?.email }}</p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap mb-0">
+            <div class="w-full">
+                <label class="text-md text-gray-400 font-bold">Department</label>    
+                <p class="text-md">{{ data?.department?.name }}</p>
+            </div>
+        </div>
+
+
+        <div class="flex items-center justify-end gap-3">
+            <button type="button" mat-stroked-button mat-dialog-close color="primary">Cancel</button>
+        </div>
+    </form>
+</div>

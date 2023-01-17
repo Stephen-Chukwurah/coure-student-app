@@ -1,0 +1,21 @@
+<mat-nav-list>
+
+    <div fxLayoutAlign="space-between center">
+        <small class="ms-3 sub-heading">MENU</small>
+    </div>
+    <div class="mb-3"></div>
+    <a mat-list-item disableRipple [routerLinkActive]="'active'" [routerLink]="'/student'">
+        <mat-icon class="sidenav-icon">person_outline</mat-icon>
+        Student
+    </a>
+    <a mat-list-item disableRipple [routerLinkActive]="'active'" [routerLink]="'/department'">
+        <mat-icon class="sidenav-icon">work_outline</mat-icon>
+        Department
+    </a>
+    <a mat-list-item disableRipple [routerLinkActive]="'active'" [routerLink]="'/school'">
+        <mat-icon class="sidenav-icon">school</mat-icon>
+        School
+    </a>
+    <div class="mb-4"></div>
+
+</mat-nav-list>

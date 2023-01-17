@@ -21,7 +21,18 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@environments/*": ["./src/environments/*"],
+      "@shared/*": ["./src/app/modules/shared/*"],
+      "@shared": ["./src/app/modules/shared/index.ts"],
+      "@core/*": ["./src/app/modules/core/*"],
+      "@core": ["./src/app/modules/core/index.ts"],
+      "@student": ["./src/app/modules/pages/student/index.ts"],
+      "@department": ["./src/app/modules/pages/department/index.ts"],
+      "@school": ["./src/app/modules/pages/school/index.ts"],
+      "@pagenotfound": ["./src/app/modules/pages/page-not-found/"],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
