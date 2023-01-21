@@ -24,9 +24,6 @@ import { reducers, metaReducers } from './+state';
     AppRoutingModule,
     BrowserAnimationsModule,
     CoreModule,
-    // StoreModule.forRoot(reducers, {
-    //   metaReducers
-    // }),
     StoreModule.forRoot(
       reducers,
       {

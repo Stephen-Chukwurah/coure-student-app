@@ -6,6 +6,7 @@ import {
 import { ISchoolState, schoolReducer } from '@school';
 import { IStudentState, studentReducer } from '@student';
 import { departmentReducer, IDepartmentState } from '@department';
+import { environment } from '@environments/environment';
 
 export interface AppState {
   student: IStudentState;
@@ -19,5 +20,4 @@ export const reducers: ActionReducerMap<AppState> = {
   school: schoolReducer
 };
 
-
-export const metaReducers: MetaReducer<AppState>[] = isDevMode() ? [] : [];
+export const metaReducers: MetaReducer<AppState>[] = !environment.production ? [] : [];
