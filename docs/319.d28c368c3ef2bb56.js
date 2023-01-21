@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcoure_student_app=self.webpackChunkcoure_student_app||[]).push([[319],{319:(c,e,u)=>{u.r(e),u.d(e,{PageNotFoundModule:()=>d});var t=u(6895),n=u(4650);let d=(()=>{class o{}return o.\u0275fac=function(s){return new(s||o)},o.\u0275mod=n.oAB({type:o}),o.\u0275inj=n.cJS({imports:[t.ez]}),o})()}}]);
